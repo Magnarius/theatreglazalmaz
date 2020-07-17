@@ -1,8 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import Layout from '../components/layout'
-import Menu from '../components/menu'
-import Header from '../components/header'
+import Header from '../components/Header.js'
 
 const Home = () => (
   <div>

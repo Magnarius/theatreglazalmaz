@@ -1,6 +1,6 @@
 import Menu from './menu'
 
-function Header({children}) {
+export default function Header({children}) {
   return (
         <section id="header">
             {/* Tittle */}
@@ -10,5 +10,3 @@ function Header({children}) {
         </section>
   )
 }
-
-export default Header

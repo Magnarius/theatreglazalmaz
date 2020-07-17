@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Layout from '../components/layout'
-import Header from '../components/header'
-import Menu from '../components/menu'
+import Layout from '../components/Layout.js'
+import Header from '../components/Header.js'
 
-function Contacts() {
+export default function Contacts() {
   return (
     <Layout>
       <Head>
@@ -14,5 +13,3 @@ function Contacts() {
     </Layout>
   )
 }
-
-export default Contacts
