@@ -1,5 +1,11 @@
+import Layout from '../components/Layout.js'
+
 function Perfomances() {
-  return <div>Perfomances</div>
+  return (
+    <Layout>
+      <div>Perfomances</div>
+    </Layout>
+  )
 }
 
 export default Perfomances

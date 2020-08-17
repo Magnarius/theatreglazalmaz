@@ -1,5 +1,11 @@
+import Layout from '../components/Layout.js'
+
 function TimeTable() {
-  return <div>TimeTable</div>
+  return (
+    <Layout>
+      <div>TimeTable</div>
+    </Layout>
+  )
 }
 
 export default TimeTable

@@ -1,41 +1,42 @@
-import Link from 'next/link'
+import ActiveLink from './ActiveLink'
 
-function Menu() {
+const Menu = () => {
   return (
     <nav id="nav">
       <ul className="">
-        <Link href="/">
-          <li className="first current">
+        <li>
+          <ActiveLink activeClassName="active" href="/">
             <a href="/">Главная</a>
-          </li>
-        </Link>
-        <Link href="/groups">
-          <li>
+          </ActiveLink>
+        </li>
+        <li>
+          <ActiveLink activeClassName="active" href="/groups">
             <a href="/groups">Группы</a>
-          </li>
-        </Link>
-        <Link href="/timetable">
-          <li >
+          </ActiveLink>
+        </li>
+        <li >
+          <ActiveLink activeClassName="active" href="/timetable">
             <a href="/timetable">Расписание</a>
-          </li>
-        </Link>
-        <Link href="/prices">
-          <li >
+          </ActiveLink>
+        </li>
+        <li >
+          <ActiveLink activeClassName="active" href="/prices">
             <a href="/prices">Стоимость</a>
-          </li>
-        </Link>
-        <Link href="/perfomances">
-          <li >
+          </ActiveLink>
+        </li>
+        <li >
+          <ActiveLink activeClassName="active" href="/perfomances">
             <a href="/perfomances">Спектакли</a>
-          </li>
-        </Link>
-        <Link href="/contacts">
-          <li className="last" >
+          </ActiveLink>
+        </li>
+        <li>
+          <ActiveLink activeClassName="active" href="/contacts">
             <a href="/contacts">Контакты</a>
-          </li>
-        </Link>
+          </ActiveLink>
+        </li>
       </ul>
     </nav>
+
   )
 }
 

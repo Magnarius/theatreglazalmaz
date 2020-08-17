@@ -6,12 +6,7 @@ import Footer from '../components/Footer.js'
 export default function Contacts() {
   return (
     <Layout>
-      <Head>
-        <title>Контакты</title>
-      </Head>
-      <Header />
       <div>Contacts</div>
-      <Footer />
     </Layout>
   )
 }

@@ -1,16 +1,8 @@
-import Head from 'next/head'
 import Layout from '../components/Layout.js'
-import Header from '../components/Header.js'
-import Footer from '../components/Footer.js'
 
 const Home = () => (
         <Layout>
-          <Head>
-            <title>Театр-студия ГлазАлмаз</title>
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
-          <Header>
-            {/* Banner */}
+          {/* <Header>
               <a href="[[~24]]">
                 <section id="banner">
                   <header>
@@ -19,8 +11,7 @@ const Home = () => (
                   </header>
                 </section>
               </a>
-          </Header>
-          <Footer></Footer>
+          </Header> */}
         </Layout>
 )
 
