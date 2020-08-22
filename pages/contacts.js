@@ -5,7 +5,7 @@ import Footer from '../components/Footer.js'
 
 export default function Contacts() {
   return (
-    <Layout>
+    <Layout title="Контакты">
       <div>Contacts</div>
     </Layout>
   )
