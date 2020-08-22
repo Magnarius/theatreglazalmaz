@@ -10,7 +10,7 @@ const Footer = () => {
 					<header>
 						<h2>{title}</h2>
 					</header>
-					<ul className="{ulClass}">
+					<ul className={ulClass}>
 						{children}
 					</ul>
 				</section>
@@ -32,8 +32,8 @@ const Footer = () => {
 						<li><a href="/perfomances">Спектакли</a></li>
 					</Link>
 				</Column>
-				<Column title="Социальные сети" ulclassName={"social"}>
-					<li><a className={"icon fa-facebook"} href="https://www.facebook.com/theatreglazalmaz/"><span className="label">Facebook</span></a></li>
+				<Column title="Социальные сети" ulClass="social">
+					<li><a className="icon fa-facebook" href="https://www.facebook.com/theatreglazalmaz/"><span className="label">Facebook</span></a></li>
 					<li><a className="icon fa-vk" href="https://vk.com/theatreglazalmaz"><span className="label">ВКонтакте</span></a></li>
 					<li><a className="icon fa-instagram" href="https://www.instagram.com/theatreglazalmaz/"><span className="label">Instagram</span></a></li>
 				</Column>
