@@ -5,12 +5,12 @@ const Footer = () => {
 
 	const Column = ({ title, ulClass, children }) => {
 		return (
-			<div class="col-4 col-12-medium">
+			<div className={"col-4 col-12-medium"}>
 				<section>
 					<header>
 						<h2>{title}</h2>
 					</header>
-					<ul class={ulClass}>
+					<ul className="{ulClass}">
 						{children}
 					</ul>
 				</section>
@@ -20,7 +20,7 @@ const Footer = () => {
 
 	const Columns = ({ children }) => {
 		return (
-			<div class="row">
+			<div className={"row"}>
 				<Column title="Разделы" ulClass="divided">
 					<Link href="/timetable">
 						<li><a href="/timetable">Расписание</a></li>
@@ -32,10 +32,10 @@ const Footer = () => {
 						<li><a href="/perfomances">Спектакли</a></li>
 					</Link>
 				</Column>
-				<Column title="Социальные сети" ulClass="social">
-					<li><a class="icon fa-facebook" href="https://www.facebook.com/theatreglazalmaz/"><span class="label">Facebook</span></a></li>
-					<li><a class="icon fa-vk" href="https://vk.com/theatreglazalmaz"><span class="label">ВКонтакте</span></a></li>
-					<li><a class="icon fa-instagram" href="https://www.instagram.com/theatreglazalmaz/"><span class="label">Instagram</span></a></li>
+				<Column title="Социальные сети" ulclassName={"social"}>
+					<li><a className={"icon fa-facebook"} href="https://www.facebook.com/theatreglazalmaz/"><span className="label">Facebook</span></a></li>
+					<li><a className="icon fa-vk" href="https://vk.com/theatreglazalmaz"><span className="label">ВКонтакте</span></a></li>
+					<li><a className="icon fa-instagram" href="https://www.instagram.com/theatreglazalmaz/"><span className="label">Instagram</span></a></li>
 				</Column>
 				<Column title="Контакты" ulClass="contact">
 					<li>
@@ -59,13 +59,13 @@ const Footer = () => {
 
 	return (
 		<section id="footer">
-			<div class="container">
+			<div className="container">
 				<Columns>
 
-					<div class="col-12">
+					<div className="col-12">
 
 						<div id="copyright">
-							<ul class="links">
+							<ul className="links">
 								<li>&copy; ГлазАлмаз. All rights reserved.</li><li>Design: <a href="https://vk.com/wanni">Magnarius</a></li>
 							</ul>
 						</div>
