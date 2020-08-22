@@ -2,15 +2,20 @@ import Head from 'next/head'
 import Header from '../components/Header.js'
 import Footer from '../components/Footer.js'
 
-function Layout({ children }) {
-
+function Layout({
+  children,
+  title = 'Театр-студия',
+  banner
+}) {
   return (
     <div id="page-wrapper">
       <Head>
-        <title>Театр-студия ГлазАлмаз</title>
+        <title>{title} | ГлазАлмаз</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Header></Header>
+      <Header
+        banner={banner}
+      />
       <section id={"main"}>
         {children}
       </section>

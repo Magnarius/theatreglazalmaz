@@ -2554,29 +2554,26 @@ input, select, textarea {
 				#titleBar .toggle {
 					width: 80px;
 					height: 60px;
+					font-family: FontAwesome;
+					text-decoration: none;
+					font-style: normal;
+					font-weight: normal;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					content: '\f0c9';
+					display: block;
+					position: absolute;
+					left: 10px;
+					top: 10px;
+					width: 50px;
+					height: 40px;
+					line-height: 40px;
+					font-size: 20px;
+					color: #fff;
+					text-align: center;
+					background: rgba(150, 150, 150, 0.75);
+					border-radius: 5px;
 				}
-
-					#titleBar .toggle:before {
-						font-family: FontAwesome;
-						text-decoration: none;
-						font-style: normal;
-						font-weight: normal;
-						-webkit-font-smoothing: antialiased;
-						-moz-osx-font-smoothing: grayscale;
-						content: '\f0c9';
-						display: block;
-						position: absolute;
-						left: 10px;
-						top: 10px;
-						width: 50px;
-						height: 40px;
-						line-height: 40px;
-						font-size: 20px;
-						color: #fff;
-						text-align: center;
-						background: rgba(150, 150, 150, 0.75);
-						border-radius: 5px;
-					}
 
 					#titleBar .toggle:active:before {
 						background-color: #969696;
@@ -2607,8 +2604,11 @@ input, select, textarea {
 				/*background-image: url("images/bg02.png");*/
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
+				.cheeseburger-menu-inner > nav {
+					padding-top: 20%;
+				}
 
-				#navPanel .link {
+				.cheeseburger-menu-inner /* #navPanel */ .link {
 					display: block;
 					color: #888;
 					text-decoration: none;
@@ -2617,6 +2617,11 @@ input, select, textarea {
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					padding: 0 1em 0 1em;
 					/*font-style: italic;*/
+					text-align: left;
+				}
+
+				.cheeseburger-menu-inner /* #navPanel */ .link.active {
+					color: #d52349
 				}
 
 					#navPanel .link:first-child {
@@ -2648,7 +2653,7 @@ input, select, textarea {
 					width: 5em;
 				}
 
-				#navPanel .depth-0 {
+				.cheeseburger-menu-inner /* #navPanel */ .depth-0 {
 					color: #fff;
 				}
 
