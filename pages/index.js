@@ -3,14 +3,14 @@ import PhoneNumber from '../components/PhoneNumber.js';
 
 const Home = () => {
   const indianMovie = (
-    <a href="/">
-      <section id="banner">
-        <header>
-          <h2>Набор 2021</h2>
-          <p>все подробности — +7 (916) 473 56 58</p>
-        </header>
-      </section>
-    </a>
+    <section id="banner">
+      <header>
+        <h2>Набор 2021</h2>
+        <p>
+          все подробности — <PhoneNumber />
+        </p>
+      </header>
+    </section>
   );
 
   return (
