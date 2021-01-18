@@ -1,4 +1,4 @@
-import ActiveLink from './ActiveLink'
+import ActiveLink from './ActiveLink';
 
 const Menu = () => {
   return (
@@ -9,26 +9,26 @@ const Menu = () => {
             <a href="/">Главная</a>
           </ActiveLink>
         </li>
-        <li>
+        {/* <li>
           <ActiveLink activeClassName="active" href="/groups">
             <a href="/groups">Группы</a>
           </ActiveLink>
-        </li>
-        <li >
+        </li> */}
+        <li>
           <ActiveLink activeClassName="active" href="/timetable">
             <a href="/timetable">Расписание</a>
           </ActiveLink>
         </li>
-        <li >
+        {/* <li >
           <ActiveLink activeClassName="active" href="/prices">
             <a href="/prices">Стоимость</a>
           </ActiveLink>
-        </li>
-        <li >
+        </li> */}
+        {/* <li >
           <ActiveLink activeClassName="active" href="/perfomances">
             <a href="/perfomances">Спектакли</a>
           </ActiveLink>
-        </li>
+        </li> */}
         <li>
           <ActiveLink activeClassName="active" href="/contacts">
             <a href="/contacts">Контакты</a>
@@ -36,8 +36,7 @@ const Menu = () => {
         </li>
       </ul>
     </nav>
+  );
+};
 
-  )
-}
-
-export default Menu
+export default Menu;

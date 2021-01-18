@@ -1,17 +1,19 @@
-import { useRouter } from 'next/router'
-import PropTypes from 'prop-types'
-import Link from 'next/link'
-import React, { Children } from 'react'
+import { useRouter } from 'next/router';
+import PropTypes from 'prop-types';
+import Link from 'next/link';
+import React, { Children } from 'react';
 
 const ActiveLink = ({ children, activeClassName, ...props }) => {
-  const { asPath } = useRouter()
-  const child = Children.only(children)
-  const childClassName = child.props.className || ''
+  const { asPath } = useRouter();
+  const child = Children.only(children);
+  const childClassName = child.props.className || '';
+
+  console.log(asPath.split('/')[1]);
 
   const className =
-    asPath === props.href
+    asPath === props.href || `/${asPath.split('/')[1]}` === props.href
       ? `${childClassName} ${activeClassName}`.trim()
-      : childClassName
+      : childClassName;
 
   return (
     <Link {...props}>
@@ -19,11 +21,11 @@ const ActiveLink = ({ children, activeClassName, ...props }) => {
         className: className || null,
       })}
     </Link>
-  )
-}
+  );
+};
 
 ActiveLink.propTypes = {
   activeClassName: PropTypes.string.isRequired,
-}
+};
 
-export default ActiveLink
+export default ActiveLink;
